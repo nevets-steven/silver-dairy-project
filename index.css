@@ -11,6 +11,8 @@
     --neon-blue: #00E0FF;
 
     --heading-color: #FFFFFF;     /* pure white for sharp headings */
+
+    --height: 100vh;
 }
 body{
     background-color: #1A1A1E;
@@ -76,7 +78,7 @@ a.active {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: var(--height);;
     line-height: normal;
 }
 .hero > img{
@@ -106,7 +108,7 @@ a.active {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: var(--height);;
     line-height: 1.6;
 }
 .about > img{
@@ -131,6 +133,27 @@ a.active {
 .about p{
     color: var(--main-color);
 }
+.treats{
+    color: var(--main-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.5rem;
+    height: var(--height);;
+}
+.item-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    max-width: 250px;
+}
+.item-card h4{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--off-white);
+}
 
 
 @media screen and (max-width: 1000px){
@@ -141,6 +164,13 @@ a.active {
     .hero p:nth-of-type(1){
         color: var(--main-color);
         font-size: 1rem;
+    }
+
+    .treats{
+        flex-direction: column;
+    }
+    .item-card{
+        max-width: 430px;
     }
 }
 @media screen and (max-width: 520px){
