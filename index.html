@@ -29,7 +29,7 @@ Contact/Feedback Section (jump link)
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Silver Daiy Project</title>
+    <title>Silver Dairy Project</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 
     <link
@@ -45,11 +45,11 @@ Contact/Feedback Section (jump link)
       <nav class="nav">
         <a href="" class="nav-link">Home</a>
         <a href="#about" class="nav-link">About</a>
-        <a href="" class="nav-link">Menu</a>
+        <a href="#menu" id='menu-link'class="nav-link">Menu</a>
         <a href="" class="nav-link">Our Team</a>
-        <a href="" class="nav-link">Events</a>
-        <a href="" class="nav-link">Feedback</a>
-        <a href="" class="nav-link">Apply</a>
+        <a href="#events" id='events-link' class="nav-link">Events</a>
+        <a href="#feedback" class="nav-link">Feedback</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScZZ8c5R86RShZAtHskAnLoukmvw1sxM9u1Ud2r0sVmM7kA7A/viewform?usp=sf_link" target="_blank" class="nav-link">Apply</a>
         <a href="https://www.instagram.com/silverdairy" target="_blank" aria-label="Instagram">
           <img src="https://cdn.simpleicons.org/instagram/FFFFFF" width="24" height="24" alt="Instagram">
         </a>
@@ -67,6 +67,11 @@ Contact/Feedback Section (jump link)
                 <h1 class="heading">Welcome To Silver Dairy</h1>
                 <p>Home of Moolinda</p>
                 <p>Open 12:00pm - 10:00pm Daily</p>
+                <a href="https://www.google.com/maps?q=32323+Grand+River+Ave,+Farmington,+MI+48336" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        32323 Grand River Ave, Farmington, MI 48336, USA
+                </a>
                 <div class="delivery">
                     <a href="" class="delivery-link">Uber Eats</a>
                     <a href="" class="delivery-link">DoorDash</a>
@@ -107,28 +112,81 @@ Contact/Feedback Section (jump link)
           </div>
         </section>
         <section class="treats">
-          <div class="item-card">
-            <img src="https://picsum.photos/200" alt="">
-            <div>
-              <h4>Ice Cream</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consequatur provident ducimus, ipsam saepe laudantium obcaecati porro neque architecto iste!</p>
+          <h2 class="treats-heading">Treats We Offer</h2>
+          <div>
+            <div class="item-card">
+              <img src="./images/guernsey.jpg" alt="">
+              <div>
+                <h4>Guernsey Ice Cream</h4>
+                <p>Many ice cream shops have their own take on this tasty hard scoop ice cream, but we're confident that ours is the best, 
+                  always prepared to perfection and locally sourced. 
+                  Share one of our twelve flavors with a friend or have 
+                  it all to yourself—you'll enjoy it till the very last bite.</p>
+              </div>
             </div>
-          </div>
-          <div class="item-card">
-            <img src="https://picsum.photos/200" alt="">
-            <div>
-              <h4>Ice Cream</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consequatur provident ducimus, ipsam saepe laudantium obcaecati porro neque architecto iste!</p>
+            <div class="item-card">
+              <img src="./images/cookiedough.jpg" alt="">
+              <div>
+                <h4>Edible Cookie Dough</h4>
+                <p>This latest addition to our menu has already become our customers' favorite. 
+                  Day or night, our Edible Cookie Dough is the dessert you've been 
+                  craving. Don't forget to ask your server about our 
+                  five different flavors!</p>
+              </div>
             </div>
-          </div>
-          <div class="item-card">
-            <img src="https://picsum.photos/200" alt="">
-            <div>
-              <h4>Ice Cream</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consequatur provident ducimus, ipsam saepe laudantium obcaecati porro neque architecto iste!</p>
+            <div class="item-card">
+              <img src="./images/softserve.jpg" alt="">
+              <div>
+                <h4>Classic Soft Serve</h4>
+                <p>With our soft serve we've managed to master an old classic. 
+                  Simplicity is the name of the game: we use great ice cream and 
+                  offer a variety of toppings, such as sprinkles, hard-shell cone 
+                  dips, nuts, and more. Create a sundae, flurry, shake, and more 
+                  with this classic treat. We also serve a rotating flavor 
+                  of non-dairy Dole Soft Serve for our friends who need a vegan 
+                  alternative.</p>
+              </div>
             </div>
           </div>
         </section>
+        <section id="feedback" class="feedback">
+          <h2 class="feedback-heading">Got Any Questions For Us?</h2>
+          <div class="contact-form-container">
+              <form id="contact-form" onsubmit="" >
+                  <div>
+                      <label for="name">Name</label>
+                      <input type="text" placeholder="Enter Your Name" id="name" name="name" required>
+                  </div>
+                  <div>
+                      <label for="email">Email</label>
+                      <input type="email" placeholder="example@gmail.com" id="email" name="email" required>
+                  </div>
+                  <div>
+                      <label for="message">Enter Your Message</label>
+                      <textarea placeholder="Type Here" id="message" rows="4" name="message" required></textarea>
+                  </div>
+                  <button type="submit" class='form-submit-cta' id='form-submit-cta'>Send to Moolinda!</button>
+              </form>
+          </div>
+        </section>
     </main>
+    <footer id="footer">
+      ©2021 by Silver Dairy
+    </footer>
+    <!-- menu popup -->
+    <div id="menu-popup" class="popup-overlay">
+      <div class="popup-content">
+        <span class="popup-close" id="popup-close">&times;</span>
+        <img src="./images/menu.avif" alt="Menu" class="popup-image">
+      </div>
+    </div>
+    <!-- events popup -->
+     <div id="events-popup" class="popup-overlay">
+      <div class="popup-content">
+        <span class="popup-close" id="popup-close">&times;</span>
+        <p>Don't forget about Moolinda Mondays!</p>
+      </div>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>
