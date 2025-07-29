@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Silver Dairy Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/sd-logo.avif"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header id="header">
+      <img src="./images/sd-logo.avif" alt="Logo" />
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="#menu" id='menu-link'class="nav-link">Menu</a>
+        <a href="#" class="nav-link">Our Team</a>
+        <a href="index.html#events" id='events-link' class="nav-link">Events</a>
+        <a href="index.html#feedback" class="nav-link">Feedback</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScZZ8c5R86RShZAtHskAnLoukmvw1sxM9u1Ud2r0sVmM7kA7A/viewform?usp=sf_link" target="_blank" class="nav-link">Apply</a>
+        <a href="https://www.instagram.com/silverdairy" target="_blank" aria-label="Instagram">
+          <img src="https://cdn.simpleicons.org/instagram/FFFFFF" width="24" height="24" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/silverdairy" target="_blank" aria-label="Facebook">
+          <img src="https://cdn.simpleicons.org/facebook/FFFFFF" width="24" height="24" alt="Facebook">
+        </a>
+
+        <!-- Last two are Instagram and Facebook -->
+      </nav>
+    </header>
+    <main id="main">
+        <section class="team">
+            <h2>Our Team</h2>
+            <div>
+                <div class="team-card">
+                    <img src="./images/jason.avif" alt="Owner">
+                    <p>Jason Smith</p>
+                    <p>Chief Ice Cream Officer</p>
+                </div>
+                <div class="team-card">
+                    <img src="./images/moolinda.avif" alt="Moolinda">
+                    <p>Moolinda</p>
+                    <p>Creator of Happiness</p>
+                </div>
+            </div>
+        </section>
+        <section class="callout">
+            <p>We love working at 
+                Silver Dairy because we can build 
+                relationships with our customers 
+                and put a smile on their face as 
+                we hand them their ice cream. The f
+                riendships we've formed with our coworkers 
+                also make the store such an enjoyable work 
+                environment! </p>
+        </section>
+    </main>
+
+    <footer id="footer">
+      ©2021 by Silver Dairy
+    </footer>
+    <!-- menu popup -->
+    <div id="menu-popup" class="popup-overlay">
+      <div class="popup-content">
+        <span class="popup-close" id="popup-close">&times;</span>
+        <img src="./images/menu.avif" alt="Menu" class="popup-image">
+      </div>
+    </div>
+    <!-- events popup -->
+     <div id="events-popup" class="popup-overlay">
+      <div class="popup-content">
+        <span class="popup-close" id="popup-close">&times;</span>
+        <p>Don't forget about Moolinda Mondays!</p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    </body>
+    
+    </html>
+    
